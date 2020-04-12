@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Clock from './components/Clock';
 
 type Props = {}
 
@@ -14,7 +13,15 @@ class App extends React.Component<Props, State> {
   }
 
   render() {
-    return <Clock/>
+    const handleClick = ():void => {
+      alert('クリックされました');
+    }
+
+    return (
+      <div>
+        <button onClick={handleClick}>クリックしてください</button>
+      </div>
+    )
   }
 
 }
