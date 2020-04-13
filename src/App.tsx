@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import Button from './components/Button';
-import Checkbox from './components/Checkbox';
+import Stopwatch from './components/Stopwatch';
 
 type Props = {}
 
@@ -9,13 +8,15 @@ type State = {}
 
 class App extends React.Component<Props, State> {
 
+  constructor(props: Props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
-    return(
+    return (
       <div>
-        <Button></Button>
-        <Checkbox label="チェックボックス1"></Checkbox>
-        <Checkbox label="チェックボックス2"></Checkbox>
-        <Checkbox label="チェックボックス3"></Checkbox>
+        <Stopwatch/>
       </div>
     )
   }
